@@ -21,4 +21,4 @@ runcmd:
  - [ s3cmd, --config, /root/.s3cfg, sync, "s3://deploy-weeia/demo", /usr/bin ]
  - [ cd, /usr/bin/demo ]
  - [ npm, install ]
- - [ forever, /usr/bin/demo/app.js ]
+ - [ AWS_REGION="us-west-2", forever, /usr/bin/demo/app.js ]
