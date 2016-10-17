@@ -1,11 +1,11 @@
 #! /bin/bash
 
- sudo apt-get -y update
- sudo apt-get -y install nodejs npm git
- sudo ln -s /usr/bin/nodejs /usr/bin/node
- sudo npm install -g forever
+ apt-get -y update
+ apt-get -y install nodejs npm git
+ ln -s /usr/bin/nodejs /usr/bin/node
+ npm install -g forever
  cd /usr/bin
- sudo git clone https://github.com/amgnet-weeia/awslab
+ git clone https://github.com/amgnet-weeia/awslab
  cd /usr/bin/awslab
- sudo npm install
- sudo forever app.js
+ npm install
+ forever app.js
