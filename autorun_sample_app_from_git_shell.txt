@@ -3,9 +3,8 @@
  apt-get -y update
  apt-get -y install nodejs npm git
  ln -s /usr/bin/nodejs /usr/bin/node
- npm install -g forever
  cd /usr/bin
  git clone https://github.com/amgnet-weeia/awslab
  cd /usr/bin/awslab
  npm install
- forever app.js
+ node app.js
