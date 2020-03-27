@@ -8,9 +8,8 @@ packages:
  - s3cmd
 runcmd:
  - [ ln, -s, /usr/bin/nodejs, /usr/bin/node ]
- - [ npm, install, -g, forever ]
  - [ cd, /usr/bin ]
  - [git, clone, "https://github.com/amgnet-weeia/awslab"]
  - [ cd, /usr/bin/awslab ]
  - [ npm, install ]
- - [ forever, /usr/bin/awslab/app.js ]
+ - [ node, /usr/bin/awslab/app.js ]
